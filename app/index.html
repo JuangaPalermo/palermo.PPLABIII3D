@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/bdcd9ce737.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pisteando Automoviles</title>
+  </head>
+  <body>
+    <header>
+      <div id="encabezado">
+        <img src="./img/logo.png" alt="Logo Automoviles" id="imagenLogo" />
+        <nav>
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="titulo">
+      <h1>Administracion</h1>
+      <img
+        src="./img/subtitulo.jpeg"
+        alt="subtitulo-autos-en-fila"
+        id="imagenSubtitulo"
+      />
+    </div>
+    <fieldset>
+      <legend>Informacion del anuncio</legend>
+      <div class="formContainer">
+        <form id="formAutomovil">
+          <input type="hidden" name="id" />
+          <input
+            class="txtForm"
+            type="text"
+            name="titulo"
+            placeholder="Titulo"
+            required
+          />
+          <fieldset class="transaccionFieldset">
+            <legend>Transaccion</legend>
+            <input type="radio" name="transaccion" value="Venta" checked />Venta
+            <input type="radio" name="transaccion" value="Alquiler" />Alquiler
+          </fieldset>
+          <input
+            class="txtForm"
+            type="text"
+            name="descripcion"
+            placeholder="Descripcion"
+            required
+          />
+          <input
+            class="txtForm"
+            type="text"
+            name="precio"
+            placeholder="Precio"
+            step="0.01"
+            required
+          />
+          <div class="cantidadesContainer">
+            <div id="puertasContainer">
+              <i class="fas fa-door-open"></i>
+              <input
+                class="txtForm"
+                type="number"
+                name="cantPuertas"
+                placeholder="Cantidad de puertas"
+                required
+              />
+            </div>
+            <div id="kilometrosContainer">
+              <input
+                class="txtForm"
+                type="number"
+                name="cantKMs"
+                step="0.01"
+                placeholder="Cantidad de kilometros"
+                required
+              />
+            </div>
+
+            <div id="potenciaContainer">
+              <input
+                class="txtForm"
+                type="number"
+                name="potencia"
+                step="0.01"
+                placeholder="Cantidad de potencia"
+                required
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="spinner-container"></div>
+    </fieldset>
+
+    <div id="buttonsContainer">
+      <input
+        type="submit"
+        class="btnForm"
+        id="btnSubmit"
+        value="Ingresar Automovil"
+        form="formAutomovil"
+      />
+      <input
+        type="button"
+        class="btnForm hidden"
+        id="btnEliminar"
+        value="Eliminar"
+        form="formAutomovil"
+      />
+    </div>
+
+    <div id="divLista"></div>
+
+    <footer>
+      <div id="footerContainer">
+        <nav>
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <p>Todos los derechos reservados <date>2021</date> &copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>
