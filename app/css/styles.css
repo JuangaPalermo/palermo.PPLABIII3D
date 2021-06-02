@@ -63,6 +63,18 @@ li {
   max-width: 50vw;
 }
 
+#guardadoContainer {
+  width: 30%;
+  display: flex;
+}
+
+#guardadoContainer > i {
+  color: black;
+}
+#guardadoContainer > input {
+  width: 90%;
+}
+
 .btnForm {
   width: 30%;
   display: block;
@@ -107,6 +119,20 @@ body > fieldset {
 .formContainer > form > fieldset {
   border-radius: 25px;
   background-color: white;
+}
+
+.cantidadesContainer > div > input {
+  width: 90%;
+}
+.cantidadesContainer > div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.cantidadesContainer > div > i {
+  color: black;
+  margin-right: 5px;
 }
 
 .cantidadesContainer {
